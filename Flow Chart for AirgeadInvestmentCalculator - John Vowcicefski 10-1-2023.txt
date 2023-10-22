@@ -1,0 +1,23 @@
+// Flow Chart for AirgeadInvestmentCalculator
+
+Start
+↓
+Get initialInvestment from user
+↓
+Get monthlyDeposit from user
+↓
+Get annualInterest from user
+↓
+Get numberOfYears from user
+↓
+Display "Press any key to continue..." and wait
+↓
+Display "Balance and Interest Without Additional Monthly Deposits"
+↓
+Calculate and Display Year End Balance and Year End Earned Interest without monthly deposits
+↓
+Display "Balance and Interest With Additional Monthly Deposits"
+↓
+Calculate and Display Year End Balance and Year End Earned Interest with monthly deposits
+↓
+End
