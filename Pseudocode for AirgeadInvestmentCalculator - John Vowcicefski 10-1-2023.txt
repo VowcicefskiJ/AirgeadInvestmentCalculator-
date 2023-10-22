@@ -1,0 +1,61 @@
+//Pseudocode for AirgeadInvestmentCalculator
+
+Start Program
+
+Create a Calculator with:
+    initialInvestment as a number
+    monthlyDeposit as a number
+    annualInterest as a number
+    numberOfYears as a number
+
+Define a Procedure called RunCalculator:
+    Display "Initial Investment Amount: $"
+    Get initialInvestment from user
+    
+    Display "Monthly Deposit: $"
+    Get monthlyDeposit from user
+    
+    Display "Annual Interest: %"
+    Get annualInterest from user
+    
+    Display "Number of Years: "
+    Get numberOfYears from user
+    
+    Display "Press any key to continue..."
+    Wait for a key press from user
+    
+    Display "Balance and Interest Without Additional Monthly Deposits"
+    Display "===================================================="
+    Display "Year\tYear End Balance\tYear End Earned Interest"
+    
+    Set amount to initialInvestment
+    For each year from 1 to numberOfYears do:
+        Set yearInterest to 0
+        For each month from 1 to 12 do:
+            Set interest to (amount * (annualInterest / 100)) / 12
+            Increase amount by interest
+            Increase yearInterest by interest
+        End For
+        Display year, amount, yearInterest
+    End For
+    
+    Display "Balance and Interest With Additional Monthly Deposits"
+    Display "===================================================="
+    Display "Year\tYear End Balance\tYear End Earned Interest"
+    
+    Set amount to initialInvestment
+    For each year from 1 to numberOfYears do:
+        Set yearInterest to 0
+        For each month from 1 to 12 do:
+            Set interest to ((amount + monthlyDeposit) * (annualInterest / 100)) / 12
+            Increase amount by monthlyDeposit + interest
+            Increase yearInterest by interest
+        End For
+        Display year, amount, yearInterest
+    End For
+
+End Procedure
+
+Run RunCalculator Procedure
+
+End Program
